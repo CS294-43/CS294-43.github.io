@@ -31,6 +31,10 @@
     .facts div { display: grid; grid-template-columns: 88px 1fr; gap: 12px; }
     dt { color: #666; }
     dd { margin: 0; font-weight: 600; }
+    .team { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; font-weight: 400; }
+    .person { display: flex; flex-direction: column; }
+    .person small { color: #666; }
+    .person a { font-size: 12px; overflow-wrap: anywhere; }
     section { padding: 24px 0; border-bottom: 1px solid #d8d8d5; scroll-margin-top: 20px; }
     .muted { color: #666; }
     .pending { font-weight: 600; }
@@ -41,6 +45,7 @@
     @media (max-width: 480px) {
       body { padding: 22px 16px 48px; font-size: 13px; }
       .facts div { grid-template-columns: 70px 1fr; gap: 8px; }
+      .team { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -51,7 +56,11 @@
     <dl class="facts">
       <div><dt>when</dt><dd>Tuesday, 6–8 PM (PT)</dd></div>
       <div><dt>where</dt><dd>Gateway B1019</dd></div>
-      <div><dt>who</dt><dd><a href="mailto:trevordarrell@berkeley.edu">Trevor Darrell</a></dd></div>
+      <div><dt>team</dt><dd class="team">
+        <span class="person"><small>Instructor</small><strong>Trevor Darrell</strong><a href="mailto:trevordarrell@berkeley.edu">trevordarrell@berkeley.edu</a></span>
+        <span class="person"><small>Seminar Coordinator</small><strong>Zirui (Colin) Wang</strong><a href="mailto:zwcolin@berkeley.edu">zwcolin@berkeley.edu</a></span>
+        <span class="person"><small>Seminar Coordinator</small><strong>Dantong Niu</strong><a href="mailto:bias_88@berkeley.edu">bias_88@berkeley.edu</a></span>
+      </dd></div>
       <div><dt>status</dt><dd>Enrollment details pending</dd></div>
     </dl>
     <nav aria-label="Sections">
