@@ -46,6 +46,7 @@
     tr.milestone td:nth-child(3), tr.closed td:nth-child(3) { font-weight: 700; }
     .papers { margin: 0; padding: 0; list-style: none; }
     .papers li + li { margin-top: 3px; }
+    .optional { margin: 8px 0 3px; color: #666; font-size: 12px; }
     footer { padding-top: 22px; font-size: 12px; color: #666; }
     @media (max-width: 480px) {
       body { padding: 22px 16px 48px; font-size: 13px; }
@@ -97,46 +98,77 @@
           <tbody>
           <tr class="milestone"><td>01</td><td><time datetime="2027-01-19">Jan 19</time></td><td>Introduction / course overview</td><td>Staff</td><td>—</td></tr>
           <tr><td>02</td><td><time datetime="2027-01-26">Jan 26</time></td><td>TBD</td><td>TBD</td><td>TBD</td></tr>
-          <tr><td>03</td><td><time datetime="2027-02-02">Feb 02</time></td><td>Foundations I: deep RL for robots</td><td>Dantong Niu</td><td><ul class="papers">
-            <li><a href="https://arxiv.org/abs/1504.00702">End-to-End Visuomotor Policies</a> (2016)</li>
-            <li><a href="https://arxiv.org/abs/1806.10293">QT-Opt</a> (2018)</li>
-            <li><a href="https://arxiv.org/abs/1910.07113">Rubik's Cube with a Robot Hand</a> (2019)</li>
-          </ul></td></tr>
-          <tr><td>04</td><td><time datetime="2027-02-09">Feb 09</time></td><td>Foundations II: behavior cloning</td><td>Dantong Niu</td><td><ul class="papers">
+          <tr><td>03</td><td><time datetime="2027-02-02">Feb 02</time></td><td>Behavior cloning</td><td>Dantong Niu</td><td><ul class="papers">
             <li><a href="https://arxiv.org/abs/2109.00137">Implicit Behavioral Cloning</a> (2021)</li>
             <li><a href="https://arxiv.org/abs/2304.13705">ACT / ALOHA</a> (2023)</li>
             <li><a href="https://arxiv.org/abs/2303.04137">Diffusion Policy</a> (2023)</li>
+          </ul>
+          <p class="optional">optional</p>
+          <ul class="papers">
+            <li><a href="https://arxiv.org/abs/2203.06173">Masked Visual Pre-training for Motor Control</a> (2022)</li>
+            <li><a href="https://arxiv.org/abs/2306.10007">Robot Learning with Sensorimotor Pre-training</a> (2023)</li>
+            <li><a href="https://arxiv.org/abs/2402.19469">Humanoid Locomotion as Next Token Prediction</a> (2024)</li>
           </ul></td></tr>
-          <tr><td>05</td><td><time datetime="2027-02-16">Feb 16</time></td><td>VLAs I: from web knowledge to robot actions</td><td>Dantong Niu</td><td><ul class="papers">
+          <tr><td>04</td><td><time datetime="2027-02-09">Feb 09</time></td><td>VLAs I: from web knowledge to robot actions</td><td>Dantong Niu</td><td><ul class="papers">
             <li><a href="https://arxiv.org/abs/2307.15818">RT-2</a> (2023)</li>
             <li><a href="https://arxiv.org/abs/2310.08864">Open X-Embodiment</a> (2023)</li>
             <li><a href="https://arxiv.org/abs/2406.09246">OpenVLA</a> (2024)</li>
+          </ul>
+          <p class="optional">optional</p>
+          <ul class="papers">
+            <li><a href="https://arxiv.org/abs/2406.11815">LLARVA</a> (2024)</li>
           </ul></td></tr>
-          <tr><td>06</td><td><time datetime="2027-02-23">Feb 23</time></td><td>VLAs II: generalist VLAs</td><td>Dantong Niu</td><td><ul class="papers">
+          <tr><td>05</td><td><time datetime="2027-02-16">Feb 16</time></td><td>VLAs II: generalist VLAs</td><td>Dantong Niu</td><td><ul class="papers">
             <li><a href="https://arxiv.org/abs/2501.09747">FAST</a> (2025)</li>
-            <li><a href="https://arxiv.org/abs/2503.14734">GR00T N1</a> (2025)</li>
             <li><a href="https://arxiv.org/abs/2504.16054">π0.5</a> (2025)</li>
+            <li><a href="https://arxiv.org/abs/2602.16710">EgoScale</a> (2026)</li>
+          </ul>
+          <p class="optional">optional</p>
+          <ul class="papers">
+            <li><a href="https://arxiv.org/abs/2503.14734">GR00T N1</a> (2025)</li>
+            <li><a href="https://arxiv.org/abs/2606.17055">T-Rex</a> (2026)</li>
           </ul></td></tr>
-          <tr><td>07</td><td><time datetime="2027-03-02">Mar 02</time></td><td>World action models I: predictive world models</td><td>Dantong Niu</td><td><ul class="papers">
+          <tr><td>06</td><td><time datetime="2027-02-23">Feb 23</time></td><td>World action models I: predictive world models</td><td>Dantong Niu</td><td><ul class="papers">
             <li><a href="https://arxiv.org/abs/1610.00696">Deep Visual Foresight</a> (2017)</li>
             <li><a href="https://arxiv.org/abs/2310.06114">UniSim</a> (2023)</li>
             <li><a href="https://arxiv.org/abs/2501.03575">Cosmos World Foundation Models</a> (2025)</li>
           </ul></td></tr>
-          <tr><td>08</td><td><time datetime="2027-03-09">Mar 09</time></td><td>World action models II: joint video and action</td><td>Dantong Niu</td><td><ul class="papers">
+          <tr><td>07</td><td><time datetime="2027-03-02">Mar 02</time></td><td>World action models II: joint video and action</td><td>Dantong Niu</td><td><ul class="papers">
             <li><a href="https://arxiv.org/abs/2302.00111">UniPi</a> (2023)</li>
             <li><a href="https://arxiv.org/abs/2503.00200">Unified Video Action Model</a> (2025)</li>
             <li><a href="https://arxiv.org/abs/2602.15922">World Action Models are Zero-shot Policies</a> (2026)</li>
+          </ul>
+          <p class="optional">optional</p>
+          <ul class="papers">
+            <li><a href="https://research.nvidia.com/labs/gear/gr00t-2/">GR00T 2</a> (2026)</li>
+          </ul></td></tr>
+          <tr><td>08</td><td><time datetime="2027-03-09">Mar 09</time></td><td>Post-training with RL</td><td>Dantong Niu</td><td><ul class="papers">
+            <li><a href="https://arxiv.org/abs/2511.14759">π*0.6 / RECAP</a> (2025)</li>
+            <li><a href="https://arxiv.org/abs/2602.13977">WoVR</a> (2026)</li>
+            <li><a href="https://arxiv.org/abs/2604.23073">RL Token</a> (2026)</li>
           </ul></td></tr>
           <tr><td>09</td><td><time datetime="2027-03-16">Mar 16</time></td><td>Agentic I: LLM planning and code as policies</td><td>Dantong Niu</td><td><ul class="papers">
-            <li><a href="https://arxiv.org/abs/2204.01691">SayCan</a> (2022)</li>
+            <li><a href="https://ojs.aaai.org/index.php/AAAI/article/view/7979">Understanding Natural Language Commands for Robotic Navigation and Mobile Manipulation</a> (2011)</li>
             <li><a href="https://arxiv.org/abs/2209.07753">Code as Policies</a> (2022)</li>
+            <li><a href="https://arxiv.org/abs/2209.11302">ProgPrompt</a> (2022)</li>
+          </ul>
+          <p class="optional">optional</p>
+          <ul class="papers">
+            <li><a href="https://arxiv.org/abs/2109.03891">SORNet</a> (2021)</li>
+            <li><a href="https://arxiv.org/abs/2204.01691">SayCan</a> (2022)</li>
             <li><a href="https://arxiv.org/abs/2307.05973">VoxPoser</a> (2023)</li>
           </ul></td></tr>
           <tr class="closed"><td>10</td><td><time datetime="2027-03-23">Mar 23</time></td><td>Spring recess</td><td>—</td><td>—</td></tr>
           <tr><td>11</td><td><time datetime="2027-03-30">Mar 30</time></td><td>Agentic II: agentic world action models</td><td>Dantong Niu</td><td><ul class="papers">
-            <li><a href="https://arxiv.org/abs/2502.19417">Hi Robot</a> (2025)</li>
             <li><a href="https://arxiv.org/abs/2603.22435">CaP-X</a> (2026)</li>
+            <li><a href="https://arxiv.org/abs/2607.00272">ASPIRE</a> (2026)</li>
             <li><a href="https://arxiv.org/abs/2610.30136">Agentic World Action Models</a> (2026)</li>
+          </ul>
+          <p class="optional">optional</p>
+          <ul class="papers">
+            <li><a href="https://arxiv.org/abs/2606.19419">Playful Agentic Robot Learning</a> (2026)</li>
+            <li><a href="https://arxiv.org/abs/2606.19980">ENPIRE</a> (2026)</li>
+            <li><a href="https://arxiv.org/abs/2502.19417">Hi Robot</a> (2025)</li>
           </ul></td></tr>
           <tr><td>12</td><td><time datetime="2027-04-06">Apr 06</time></td><td>TBD</td><td>TBD</td><td>TBD</td></tr>
           <tr><td>13</td><td><time datetime="2027-04-13">Apr 13</time></td><td>TBD</td><td>TBD</td><td>TBD</td></tr>
